@@ -10,3 +10,5 @@ On a lighter note, the Marcos administration has apparently done a lot in variou
 
 
 4. Difficult to fix
+
+[Live video of SONA 2025.](https://www.youtube.com/live/zsZ1T0hsLvA?si=0SsbpJkbrjIuu0Lk)
