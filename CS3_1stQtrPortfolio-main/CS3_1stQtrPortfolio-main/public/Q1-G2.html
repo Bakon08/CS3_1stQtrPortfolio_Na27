@@ -1,28 +1,25 @@
-<h1> Q1 3rd Graded Excercise submitted by Jed Pascua</h1>
-
-<label id="in1">Meal Price:</label>
-<input id="in1" type="number" placeholder="Meal Price"> <br> <br>
-<label id="in2">Service Change (%):</label>
-<input id="in2" type="number" placeholder="Service Change (%)"> <br> <br>
-<label id="in3">Tip:</label>
-<input id="in3" type="number" placeholder="Tip"> <br>
-<button onclick="Total()"> Calculate Total </button>
-
-<script>
-function Total() {
-    var in1 = document.getElementById("in1").value;
-    var in2 = document.getElementById("in2").value;
-    var in3 = document.getElementById("in3").value;
-
-    var mealPrice = parseFloat(in1);
-    var serviceCharge = parseFloat (in2) / 100;
-    var tip = Number(in3.value);
-
-    var total = mealPrice + (mealPrice * serviceCharge + tip)
-    alert("Total Amount: 
-
-
-
-}
-
-</script>
+<html>
+<body>
+    <h1> Q1 3rd Graded Excercise submitted by Jed Pascua</h1>
+    
+    <input id="in1" type="number" placeholder="Meal Price"> <br> <br>
+    <input id="in2" type="number" placeholder="Service Change (%)"> <br> <br>
+    <input id="in3" type="number" placeholder="Tip"> <br>
+    
+    <button onclick="Total()"> Calculate Total </button>
+    
+    <div id = "out1" style="background-color: azure;border:10px solid red;font-weight:bold;color:rgb(0, 0, 0);"> </div>
+    
+    <script>
+    function Total() {
+        var mealPrice = parseFloat(document.getElementById("in1").value);
+        var serviceCharge = parseFloat (document.getElementById("in2").value) / 100;
+        var tip = Number(document.getElementById("in3").value);
+    
+        var total = mealPrice + (mealPrice * serviceCharge) + tip;
+        
+        document.getElementById("out1").innerHTML = "Total: " + total.toFixed(2);
+    }
+    </script>
+</body>
+</html>
