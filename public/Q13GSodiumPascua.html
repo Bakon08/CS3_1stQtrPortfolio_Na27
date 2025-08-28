@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Q1 3rd Graded Exercise</title>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1.5;
+        background-color: #230f3cf1;
+        font-size: 16px;
+        color: #1dfff4;
+        text-align: center;
+        }
+    h2 {
+          background-color:#10bb7a;
+          width:100%;
+          height:55px;
+          top:56px;
+          border-radius: 15px;
+        }
+</style>
+<body>
+   <h2> Q1 3rd Graded Exercise submitted by Jed Pascua of 9-Sodium</h2>
+   <label><strong>Initial State:</strong></label>
+   <input id="in1" type="number"> <br>
+   <button onclick="checkIt()"> Check </button>
+
+    <script>
+
+       var dNumber = Math.floor(Math.random() * 100) + 1; // generates a number from 1  to 100 when the page loads
+
+        function checkIt() {
+            var input = parseFloat(document.getElementById("in1").value);
+            
+            if(input==dNumber){
+                alert('You are correct!');
+            }
+            else if (input > dNumber){
+                alert('Lower..');
+            }
+            else{
+                alert('Higher..');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
